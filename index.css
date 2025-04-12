@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #0f1424;
+    color: white;
+    padding: 40px;
+
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 30px;
+    max-width: 1100px;
+    max-width: 1014px;
+    margin: auto;
+
+}
+
+.sidebar {
+    width: 275px;
+    border-radius: 20px;
+    overflow: hidden;
+    border-radius: 20px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0px;
+     
+
+
+}
+
+.top-section {
+    background-color: #5746ea;
+    padding: 25px 20px 70px;
+    position: relative;
+    border-radius: 15px;
+}
+
+.profile-img {
+    width: 72px;
+    height: 75px;
+    border-radius: 50%;
+    border: 2px solid white;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.report-text {
+    margin-top: 70px;
+}
+
+.report-text p {
+    font-size: 14px;
+    color: #cfcfff;
+    margin: 0;
+    opacity: 0.8;
+    padding-top: 2rem;
+}
+
+.report-text h2 {
+    font-size: 42px;
+    margin: 5px 0 0;
+    color: white;
+    line-height: 1.2;
+    font-family: monospace;
+}
+
+.bottom-section {
+    background-color: #1c204b;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.bottom-section span {
+    color: #bbc0ff;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.bottom-section span.active {
+    color: white;
+    opacity: 1;
+}
+
+.buttom-section.active {
+    color: white;
+    font-weight: bold;
+}
+
+/* activity cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    /* height: 180px; */
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.card .card-bg {
+    /* position: absolute; */
+    top: 0;
+    width: 100%;
+    height: 40%;
+    opacity: 0.2;
+}
+
+.card .card-content {
+    background-color: #1c1f4a;
+    padding: 20px;
+    border-radius: 20px;
+    z-index: 1;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card .hours {
+    /* font-size: 28px; */
+    font-size: 43px;
+    font-weight: 300;
+}
+
+.card .previous {
+    font-size: 14px;
+    color: #a1a4d0;
+}
+
+/* Color Themes */
+.card.work {
+    background-color: #ff8b64;
+}
+
+.card.play {
+    background-color: #56c2e6;
+}
+
+.card.study {
+    background-color: #ff5e7d;
+}
+
+.card.exercise {
+    background-color: #4acf81;
+}
+
+.card.social {
+    background-color: #7536d3;
+}
+
+.card.selfcare {
+    background-color: #f1c65b;
+}
