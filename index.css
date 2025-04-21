@@ -3,12 +3,13 @@
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
+
 }
 
 body {
-    background-color: #0f1424;
+    background-color: hsl(226, 43%, 10%);
     color: white;
-    padding: 40px;
+    padding: 200px 0;
 
 }
 
@@ -23,24 +24,26 @@ body {
 }
 
 .sidebar {
-    width: 275px;
+    /* width: 275px; */
     border-radius: 20px;
     overflow: hidden;
     border-radius: 20px;
-    padding: 30px 20px;
     display: flex;
     flex-direction: column;
     padding-top: 0px;
-     
+    background-color: #1c204b;
 
 
 }
 
 .top-section {
-    background-color: #5746ea;
+    background-color: hsl(246, 80%, 60%);
     padding: 25px 20px 70px;
     position: relative;
     border-radius: 15px;
+
+
+
 }
 
 .profile-img {
@@ -59,7 +62,7 @@ body {
 
 .report-text p {
     font-size: 14px;
-    color: #cfcfff;
+    color: hsl(236, 100%, 87%);
     margin: 0;
     opacity: 0.8;
     padding-top: 2rem;
@@ -74,7 +77,7 @@ body {
 }
 
 .bottom-section {
-    background-color: #1c204b;
+    background-color: hsl(235, 46%, 20%);
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -84,14 +87,18 @@ body {
 }
 
 .bottom-section span {
-    color: #bbc0ff;
+    color: hsl(235, 45%, 61%);
     opacity: 0.6;
     cursor: pointer;
 }
 
 .bottom-section span.active {
-    color: white;
+    /* color: white; */
     opacity: 1;
+}
+
+#weekly {
+    color: white;
 }
 
 .buttom-section.active {
@@ -111,7 +118,7 @@ body {
     border-radius: 20px;
     overflow: hidden;
     /* height: 180px; */
-    height: 200px;
+    height: 250px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -125,9 +132,14 @@ body {
     opacity: 0.2;
 }
 
+.card .card-bg img {
+    padding: 29px 7px 1px 140px;
+
+}
+
 .card .card-content {
-    background-color: #1c1f4a;
-    padding: 20px;
+    background-color: hsl(235, 46%, 20%);
+    padding: 35px;
     border-radius: 20px;
     z-index: 1;
     position: relative;
@@ -135,12 +147,14 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    line-height: 1.8;
 }
 
 .card .top {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .card .hours {
@@ -156,25 +170,41 @@ body {
 
 /* Color Themes */
 .card.work {
-    background-color: #ff8b64;
+    background-color: hsl(15, 100%, 70%);
 }
 
 .card.play {
-    background-color: #56c2e6;
+    background-color: hsl(195, 74%, 62%);
 }
 
 .card.study {
-    background-color: #ff5e7d;
+    background-color: hsl(348, 100%, 68%);
 }
 
 .card.exercise {
-    background-color: #4acf81;
+    background-color: hsl(145, 58%, 55%);
 }
 
 .card.social {
-    background-color: #7536d3;
+    background-color: hsl(264, 64%, 52%);
 }
 
 .card.selfcare {
-    background-color: #f1c65b;
+    background-color: hsl(43, 84%, 65%);
+}
+
+/* media queries */
+
+@media (max-width:1440px) {
+    .dashboard {
+        display: grid;
+
+    }
+}
+
+@media (max-width:375px) {
+    .dashboard {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
